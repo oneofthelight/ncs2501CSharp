@@ -3,6 +3,6 @@
     private static void Main(string[] args)
     {
         Solution sol = new Solution();
-        Console.WriteLine(sol.solution01102(23));
+        Console.WriteLine(sol.solution0113(7,99));
     }
 }
