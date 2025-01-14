@@ -1,7 +1,69 @@
+using System.Security.Cryptography.X509Certificates;
+
 class Sample
 {
 
+    public void Array()
+    {
+     // 1차 배열
+        string[] players = new string[10];
+        Console.WriteLine("players:" + players.Length);
+        int[] intarray = new int[100];
+        Console.WriteLine("intarray:" + intarray.Length);
+        char[] cc = new char[5];    
+        int[] abc = new int[3]{1,2,3};
+        string[] Regions = new string[3]{"seoul", "kk", "busan"};
+        
+        //2
+        string[,] Depts = new string[2,2];
+        Console.WriteLine("Depts:" + Depts.Length);
+        int[,] inta2 = new int[3,2]{{1,2},{2,3},{3,4}};
+        Console.WriteLine("inta2:" + inta2.Length);
 
+        //3
+        string[,,] Cubes = new string[2,3,4];
+        Console.WriteLine("Cubes:"+ Cubes.Length);
+
+        int[][] ii = new int[2][];
+        int[][] iii = new int[3][];   
+        iii[0] = new int[2]{1,2};
+        iii[1] = new int[2]{2,3};
+        iii[2] = new int[2]{3,4};
+
+        int sum = 0; 
+        int[] scores = new int[]{80,78,60,90,100};
+        for (int i = 0; i<scores.Length; i++)
+        {
+            // sum = sum + scores[i];
+            // sum -= scores[i];
+            // sum *= scores[i];
+            // sum /= scores[i];
+            sum += scores[i];
+        }
+        Console.WriteLine("sum : " + sum);
+
+        int[] ss = new int[100];
+        ss[0] = 90;
+        int val = ss[0];
+    }
+    public void RandomSum()
+    {
+        // random
+        int sum = 0;
+        int[] nums = new int[10];
+
+        Random rand = new Random();
+        for (int i = 0; i < nums.Length; i++) 
+        {
+            nums[i] = rand.Next() % 100;
+            Console.WriteLine("nums["+i+"]:" + nums[i]);
+        }
+        for (int i = 0; i < nums.Length; i++)
+        {
+            sum += nums[i];
+        }
+        Console.WriteLine(sum);
+    }
     void Datatype()
     {
         bool b = true;
