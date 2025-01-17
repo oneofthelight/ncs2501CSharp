@@ -3,10 +3,13 @@
     private static void Main(string[] args)
     {
         Solution sol = new Solution();
-        Console.WriteLine(sol.solution01142(64, 6));
+        int[] intarray = new int[]{149, 180, 192, 170};
+        Console.WriteLine(sol.solution0117(intarray, 167)); 
 
-        // Sample sam = new Sample();
         // //sam.Array();
         // sam.RandomSum();
+        
+        // Sample sam = new Sample();
+        // sam.Dictionary();
     }
 }

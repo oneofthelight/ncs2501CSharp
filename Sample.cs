@@ -4,12 +4,11 @@ using System.Security.Cryptography.X509Certificates;
 
 class Sample
 {
-
     public void Dictionary()
     {
         // var    
         var chr = new List<char>();
-        var dic = new Dictionary<int>();
+        var dic = new Dictionary<int, int>();
 
         // hashtable
         Hashtable ht = new Hashtable();

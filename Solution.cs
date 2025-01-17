@@ -2,6 +2,31 @@ using System.Runtime.Serialization;
 
 class Solution
 {   
+    public int solution0117(int[] array, int height)
+    {
+        int answer = 0;
+        //배열 크기만큼 반복
+        /*for (int i = 0; i < array.Length; i++) {
+            // 머쓱이 키와 비교
+            if ( array[i] > height)
+                {
+                // 크면 결과값 + 1
+                answer++;
+                }
+        }*/
+        // foreach
+        foreach (var item in array)
+        {
+            if (item > height)
+            {
+                answer++;
+            }
+        }
+
+        // 결과값 리턴
+        return answer;
+    }
+  
     /// <summary>
     /// 양꼬치
     /// </summary>
