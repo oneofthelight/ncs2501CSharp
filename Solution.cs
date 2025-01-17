@@ -1,7 +1,26 @@
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 
 class Solution
 {   
+    public int[] solution01172(int[] num_list)
+    {
+        int[] answer = new int[2];
+        foreach (var item in num_list)
+        {
+            if (item % 2 == 0)
+            {
+                answer[0]++;
+            }
+            else
+            {
+                answer[1]++;
+            }
+        }
+        return answer;
+    }
+
     public int solution0117(int[] array, int height)
     {
         int answer = 0;
