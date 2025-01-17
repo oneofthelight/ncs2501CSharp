@@ -1,38 +1,74 @@
+using System.Collections;
+using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography.X509Certificates;
 
 class Sample
 {
 
+    public void Dictionary()
+    {
+        // var    
+        var chr = new List<char>();
+        var dic = new Dictionary<int>();
+
+        // hashtable
+        Hashtable ht = new Hashtable();
+        ht.Add("irina", "Irina SP");
+        ht.Add("tom", "Tom Cr");
+
+        if (ht.Contains("tom"))
+        {
+            Console.WriteLine(ht["tom"]);
+        }
+        // Dictoinary
+        Dictionary<int, string> emp = new Dictionary<int, string>();
+        emp.Add(1001, "Jane");
+        emp.Add(1002, "Tom");
+        emp.Add(1003, "Cindy");
+
+        Console.WriteLine("Count:" + emp.Count);
+
+        string name = emp[1002];
+        Console.WriteLine(name);
+        if (emp.ContainsKey(1004))
+        {
+            name = emp[1004];
+            Console.WriteLine(name);
+        }
+
+    }
     public void Array()
     {
-     // 1차 배열
+
+
+        // 1차 배열
         string[] players = new string[10];
         Console.WriteLine("players:" + players.Length);
         int[] intarray = new int[100];
         Console.WriteLine("intarray:" + intarray.Length);
-        char[] cc = new char[5];    
-        int[] abc = new int[3]{1,2,3};
-        string[] Regions = new string[3]{"seoul", "kk", "busan"};
-        
+        char[] cc = new char[5];
+        int[] abc = new int[3] { 1, 2, 3 };
+        string[] Regions = new string[3] { "seoul", "kk", "busan" };
+
         //2
-        string[,] Depts = new string[2,2];
+        string[,] Depts = new string[2, 2];
         Console.WriteLine("Depts:" + Depts.Length);
-        int[,] inta2 = new int[3,2]{{1,2},{2,3},{3,4}};
+        int[,] inta2 = new int[3, 2] { { 1, 2 }, { 2, 3 }, { 3, 4 } };
         Console.WriteLine("inta2:" + inta2.Length);
 
         //3
-        string[,,] Cubes = new string[2,3,4];
-        Console.WriteLine("Cubes:"+ Cubes.Length);
+        string[,,] Cubes = new string[2, 3, 4];
+        Console.WriteLine("Cubes:" + Cubes.Length);
 
         int[][] ii = new int[2][];
-        int[][] iii = new int[3][];   
-        iii[0] = new int[2]{1,2};
-        iii[1] = new int[2]{2,3};
-        iii[2] = new int[2]{3,4};
+        int[][] iii = new int[3][];
+        iii[0] = new int[2] { 1, 2 };
+        iii[1] = new int[2] { 2, 3 };
+        iii[2] = new int[2] { 3, 4 };
 
-        int sum = 0; 
-        int[] scores = new int[]{80,78,60,90,100};
-        for (int i = 0; i<scores.Length; i++)
+        int sum = 0;
+        int[] scores = new int[] { 80, 78, 60, 90, 100 };
+        for (int i = 0; i < scores.Length; i++)
         {
             // sum = sum + scores[i];
             // sum -= scores[i];
@@ -53,10 +89,10 @@ class Sample
         int[] nums = new int[10];
 
         Random rand = new Random();
-        for (int i = 0; i < nums.Length; i++) 
+        for (int i = 0; i < nums.Length; i++)
         {
             nums[i] = rand.Next() % 100;
-            Console.WriteLine("nums["+i+"]:" + nums[i]);
+            Console.WriteLine("nums[" + i + "]:" + nums[i]);
         }
         for (int i = 0; i < nums.Length; i++)
         {
@@ -81,9 +117,9 @@ class Sample
         char c = 'A';
         string s = "Hello";
 
-        if (s[1] == 'e') 
+        if (s[1] == 'e')
             b = true;
-        else 
+        else
             b = false;
 
         //DateTime  2011 - 10 - 30 12:35
