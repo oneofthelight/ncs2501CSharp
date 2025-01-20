@@ -4,6 +4,33 @@ using System.Runtime.Serialization;
 
 class Solution
 {   
+    /// <summary>
+    /// 피자 나눠먹기 (3)
+    /// </summary>
+    /// <param name="slice"></param>
+    /// <param name="n"></param>
+    /// <returns></returns>
+    public int solution0120(int slice, int n)
+    {
+        int answer = 0;
+        //for문 반복
+        for (int i = 1; i <= n; i += slice)
+        {
+            // 한판 추가
+            answer++;
+        }
+        return answer;
+
+        /*
+        int answer = 0;
+        while(slice * answer < n)
+        {
+            answer++;
+        }
+        return answer;
+        */
+    }
+
     public int[] solution01172(int[] num_list)
     {
         int[] answer = new int[2];

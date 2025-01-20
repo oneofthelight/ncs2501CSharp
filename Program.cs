@@ -4,7 +4,7 @@
     {
         Solution sol = new Solution();
         int[] intarray = new int[]{149, 180, 192, 170};
-        Console.WriteLine(sol.solution0117(intarray, 167)); 
+        Console.WriteLine(sol.solution0120(4, 12)); 
 
         // //sam.Array();
         // sam.RandomSum();
