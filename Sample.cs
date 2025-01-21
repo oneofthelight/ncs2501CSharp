@@ -1,9 +1,44 @@
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.Intrinsics.Arm;
 using System.Security.Cryptography.X509Certificates;
 
 class Sample
 {
+    public void StringSample()
+    {
+        string s1 = "C#";
+        string s2 = "Programming";
+        //char c1 = 'A';
+        //char c2 = 'B';
+        char [] c3 = new char[]{'a','b','c','d','e'};
+        string s3 = s1 + " " + s2;
+        //Console.WriteLine("String: {0} {1}", s3, 10);
+
+        string s3substring = s3.Substring(1,5);
+        //Console.WriteLine("Substring : {0}", s3substring);
+
+        string s = "C# Studies";
+        for (int i = 0; i < s1.Length; i++)
+        {
+            Console.WriteLine("{0}: {1}", i, s[i]);
+        }
+
+        string str = "Hello";
+        char[] charArray = str.ToCharArray();
+        for (int i = 0; i < charArray.Length; i++) 
+        {
+            Console.WriteLine(charArray[i]);
+        }
+
+        char[] charArray2 = {'A','B','C','B'};
+        s = new string(charArray2);
+        Console.WriteLine(s);
+
+        char c1 = 'A';
+        char c2 = (char)(c1 + 3);
+        Console.WriteLine(c2);
+    }
     public void Dictionary()
     {
         // var    
