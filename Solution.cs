@@ -4,6 +4,15 @@ using System.Runtime.Serialization;
 
 class Solution
 {   
+    public int[] Solution0121(int[] numbers)
+    {
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            numbers[i] *= 2;
+        }
+        return numbers;
+    }
+
     /// <summary>
     /// 피자 나눠먹기 (3)
     /// </summary>
