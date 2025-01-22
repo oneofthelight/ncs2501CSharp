@@ -9,7 +9,7 @@
         // //sam.Array();
         // sam.RandomSum();
         
-        //Sample sam = new Sample();
-        //sam.StringSample();
+        Sample sam = new Sample();
+        sam.EnumSample();
     }
 }

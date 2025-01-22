@@ -1,10 +1,50 @@
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
+using System.IO.Compression;
 using System.Runtime.Intrinsics.Arm;
 using System.Security.Cryptography.X509Certificates;
 
 class Sample
 {
+    enum City 
+    {
+        PyungYang,
+        Seoul,
+        Deajun,
+        Busan = 5,
+        Jeju = 10
+    }
+    [Flags]
+    enum    Border
+    {
+        None = 0,
+        Top = 1,
+        Right = 2,
+        Bottom = 4,
+        Left = 8
+    }
+    public void EnumSample()
+    {
+        City myCity;
+        myCity = City.Seoul;
+        int cityValue = (int)myCity;
+        if (myCity == City.Seoul)
+        {
+            Console.WriteLine("Welcome to Seoul");
+        }
+        Border b = Border.Top | Border.Bottom | Border.Left;
+    // & 연산자로 플래그 체크
+    if ((b & Border.Top) != 0)
+        {
+        //HasFlag()이용 플래그 체크
+        if (b.HasFlag(Border.Bottom))
+            {
+            // "Top, Bottom" 출력
+            Console.WriteLine(b.ToString());
+            }
+        }
+    }
+
     public void StringSample()
     {
         string s1 = "C#";
