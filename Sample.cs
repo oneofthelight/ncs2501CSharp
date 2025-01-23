@@ -1,11 +1,32 @@
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.SymbolStore;
 using System.IO.Compression;
 using System.Runtime.Intrinsics.Arm;
+using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography.X509Certificates;
 
 class Sample
 {
+    public void Operator()
+    {
+        //조건 연산자
+        //int val = (a>b) ? a : b;
+        //int? iii = null;
+        //i = iii ?? 0;
+        string ss;
+        int s = 0;
+        if (s == null)
+        {
+            ss = string.Empty;
+        }
+        else 
+        {
+            //ss = s;
+        }
+
+    }
+
     enum City 
     {
         PyungYang,
