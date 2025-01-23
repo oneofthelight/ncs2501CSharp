@@ -5,6 +5,10 @@ using System.Runtime.Serialization;
 class Solution
 {   
     
+    /*public int Solution0123()
+    {
+        
+    }*/
     public int[] Solution0121(int[] numbers)
     {
         for (int i = 0; i < numbers.Length; i++)
