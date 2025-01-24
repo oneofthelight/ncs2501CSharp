@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 
 class Sample
 {
+    
     public void Operator()
     {
         //조건 연산자
