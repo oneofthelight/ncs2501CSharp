@@ -9,7 +9,10 @@
         // //sam.Array();
         // sam.RandomSum();
         
-        Sample sam = new Sample();
-        sam.EnumSample();
+        //Sample sam = new Sample();
+        //sam.EnumSample();
+
+        nssample nss = new nssample();
+        nss.something();
     }
 }
