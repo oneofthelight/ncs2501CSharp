@@ -12,7 +12,8 @@
         //Sample sam = new Sample();
         //sam.EnumSample();
 
-        nssample nss = new nssample();
-        nss.something();
+        //nssample nss = new nssample();
+        //nss.something();
+        //myc.YearMoney = -1000;
     }
 }
